@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.5.2"/>
+		<Timestamp>2018-10-11T10:08:37Z</Timestamp>
+	</Header>
+	<MiningBuildTask>
+		<Extension>PMMLPipeline(steps=[('classifier', SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False))])</Extension>
+	</MiningBuildTask>
+	<DataDictionary>
+		<DataField name="y" optype="categorical" dataType="string">
+			<Value value="Iris-setosa"/>
+			<Value value="Iris-versicolor"/>
+			<Value value="Iris-virginica"/>
+		</DataField>
+		<DataField name="x1" optype="continuous" dataType="double"/>
+		<DataField name="x2" optype="continuous" dataType="double"/>
+		<DataField name="x3" optype="continuous" dataType="double"/>
+		<DataField name="x4" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<SupportVectorMachineModel functionName="classification" classificationMethod="OneAgainstOne">
+		<MiningSchema>
+			<MiningField name="y" usageType="target"/>
+			<MiningField name="x1"/>
+			<MiningField name="x2"/>
+			<MiningField name="x3"/>
+			<MiningField name="x4"/>
+		</MiningSchema>
+		<RadialBasisKernelType gamma="0.25"/>
+		<VectorDictionary>
+			<VectorFields>
+				<FieldRef field="x1"/>
+				<FieldRef field="x2"/>
+				<FieldRef field="x3"/>
+				<FieldRef field="x4"/>
+			</VectorFields>
+			<VectorInstance id="12">
+				<Array type="real">4.3 3.0 1.1 0.1</Array>
+			</VectorInstance>
+			<VectorInstance id="14">
+				<Array type="real">5.7 4.4 1.5 0.4</Array>
+			</VectorInstance>
+			<VectorInstance id="17">
+				<Array type="real">5.7 3.8 1.7 0.3</Array>
+			</VectorInstance>
+			<VectorInstance id="22">
+				<Array type="real">5.1 3.3 1.7 0.5</Array>
+			</VectorInstance>
+			<VectorInstance id="23">
+				<Array type="real">4.8 3.4 1.9 0.2</Array>
+			</VectorInstance>
+			<VectorInstance id="40">
+				<Array type="real">4.5 2.3 1.3 0.3</Array>
+			</VectorInstance>
+			<VectorInstance id="43">
+				<Array type="real">5.1 3.8 1.9 0.4</Array>
+			</VectorInstance>
+			<VectorInstance id="49">
+				<Array type="real">7.0 3.2 4.7 1.4</Array>
+			</VectorInstance>
+			<VectorInstance id="51">
+				<Array type="real">6.9 3.1 4.9 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="53">
+				<Array type="real">6.5 2.8 4.6 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="55">
+				<Array type="real">6.3 3.3 4.7 1.6</Array>
+			</VectorInstance>
+			<VectorInstance id="56">
+				<Array type="real">4.9 2.4 3.3 1.0</Array>
+			</VectorInstance>
+			<VectorInstance id="59">
+				<Array type="real">5.0 2.0 3.5 1.0</Array>
+			</VectorInstance>
+			<VectorInstance id="62">
+				<Array type="real">6.1 2.9 4.7 1.4</Array>
+			</VectorInstance>
+			<VectorInstance id="65">
+				<Array type="real">5.6 3.0 4.5 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="67">
+				<Array type="real">6.2 2.2 4.5 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="69">
+				<Array type="real">5.9 3.2 4.8 1.8</Array>
+			</VectorInstance>
+			<VectorInstance id="71">
+				<Array type="real">6.3 2.5 4.9 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="75">
+				<Array type="real">6.8 2.8 4.8 1.4</Array>
+			</VectorInstance>
+			<VectorInstance id="76">
+				<Array type="real">6.7 3.0 5.0 1.7</Array>
+			</VectorInstance>
+			<VectorInstance id="77">
+				<Array type="real">6.0 2.9 4.5 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="82">
+				<Array type="real">6.0 2.7 5.1 1.6</Array>
+			</VectorInstance>
+			<VectorInstance id="83">
+				<Array type="real">5.4 3.0 4.5 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="84">
+				<Array type="real">6.0 3.4 4.5 1.6</Array>
+			</VectorInstance>
+			<VectorInstance id="85">
+				<Array type="real">6.7 3.1 4.7 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="97">
+				<Array type="real">5.1 2.5 3.0 1.1</Array>
+			</VectorInstance>
+			<VectorInstance id="98">
+				<Array type="real">6.3 3.3 6.0 2.5</Array>
+			</VectorInstance>
+			<VectorInstance id="104">
+				<Array type="real">4.9 2.5 4.5 1.7</Array>
+			</VectorInstance>
+			<VectorInstance id="108">
+				<Array type="real">6.5 3.2 5.1 2.0</Array>
+			</VectorInstance>
+			<VectorInstance id="116">
+				<Array type="real">7.7 2.6 6.9 2.3</Array>
+			</VectorInstance>
+			<VectorInstance id="117">
+				<Array type="real">6.0 2.2 5.0 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="119">
+				<Array type="real">5.6 2.8 4.9 2.0</Array>
+			</VectorInstance>
+			<VectorInstance id="121">
+				<Array type="real">6.3 2.7 4.9 1.8</Array>
+			</VectorInstance>
+			<VectorInstance id="124">
+				<Array type="real">6.2 2.8 4.8 1.8</Array>
+			</VectorInstance>
+			<VectorInstance id="125">
+				<Array type="real">6.1 3.0 4.9 1.8</Array>
+			</VectorInstance>
+			<VectorInstance id="127">
+				<Array type="real">7.2 3.0 5.8 1.6</Array>
+			</VectorInstance>
+			<VectorInstance id="129">
+				<Array type="real">7.9 3.8 6.4 2.0</Array>
+			</VectorInstance>
+			<VectorInstance id="131">
+				<Array type="real">6.3 2.8 5.1 1.5</Array>
+			</VectorInstance>
+			<VectorInstance id="132">
+				<Array type="real">6.1 2.6 5.6 1.4</Array>
+			</VectorInstance>
+			<VectorInstance id="136">
+				<Array type="real">6.0 3.0 4.8 1.8</Array>
+			</VectorInstance>
+			<VectorInstance id="139">
+				<Array type="real">6.9 3.1 5.1 2.3</Array>
+			</VectorInstance>
+			<VectorInstance id="140">
+				<Array type="real">5.8 2.7 5.1 1.9</Array>
+			</VectorInstance>
+			<VectorInstance id="144">
+				<Array type="real">6.3 2.5 5.0 1.9</Array>
+			</VectorInstance>
+			<VectorInstance id="145">
+				<Array type="real">6.5 3.0 5.2 2.0</Array>
+			</VectorInstance>
+			<VectorInstance id="148">
+				<Array type="real">5.9 3.0 5.1 1.8</Array>
+			</VectorInstance>
+		</VectorDictionary>
+		<SupportVectorMachine targetCategory="Iris-versicolor" alternateTargetCategory="Iris-setosa">
+			<SupportVectors>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="49"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="55"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="59"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="69"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="97"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.04015386323133989">
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.4381665634262894"/>
+				<Coefficient value="0.06640541698869377"/>
+				<Coefficient value="0.002861379826076724"/>
+				<Coefficient value="0.35447377690880033"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="0.4628295526507081"/>
+				<Coefficient value="-0.5604409875143085"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.5419856414555031"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.1537117277886973"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.06859833304205927"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-1.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="Iris-virginica" alternateTargetCategory="Iris-setosa">
+			<SupportVectors>
+				<SupportVector vectorId="12"/>
+				<SupportVector vectorId="14"/>
+				<SupportVector vectorId="17"/>
+				<SupportVector vectorId="22"/>
+				<SupportVector vectorId="23"/>
+				<SupportVector vectorId="40"/>
+				<SupportVector vectorId="43"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="104"/>
+				<SupportVector vectorId="108"/>
+				<SupportVector vectorId="116"/>
+				<SupportVector vectorId="117"/>
+				<SupportVector vectorId="119"/>
+				<SupportVector vectorId="121"/>
+				<SupportVector vectorId="124"/>
+				<SupportVector vectorId="125"/>
+				<SupportVector vectorId="127"/>
+				<SupportVector vectorId="129"/>
+				<SupportVector vectorId="131"/>
+				<SupportVector vectorId="132"/>
+				<SupportVector vectorId="136"/>
+				<SupportVector vectorId="139"/>
+				<SupportVector vectorId="140"/>
+				<SupportVector vectorId="144"/>
+				<SupportVector vectorId="145"/>
+				<SupportVector vectorId="148"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.16778860155089328">
+				<Coefficient value="0.009867889236847747"/>
+				<Coefficient value="0.95549974082513"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.01238555980329965"/>
+				<Coefficient value="0.9671561450194167"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.11810105132401424"/>
+				<Coefficient value="-0.733564343803907"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.4273038282721535"/>
+				<Coefficient value="-0.09958583105024534"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.40493203862783583"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.16142224180653836"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-0.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+		<SupportVectorMachine targetCategory="Iris-virginica" alternateTargetCategory="Iris-versicolor">
+			<SupportVectors>
+				<SupportVector vectorId="49"/>
+				<SupportVector vectorId="51"/>
+				<SupportVector vectorId="53"/>
+				<SupportVector vectorId="55"/>
+				<SupportVector vectorId="56"/>
+				<SupportVector vectorId="59"/>
+				<SupportVector vectorId="62"/>
+				<SupportVector vectorId="65"/>
+				<SupportVector vectorId="67"/>
+				<SupportVector vectorId="69"/>
+				<SupportVector vectorId="71"/>
+				<SupportVector vectorId="75"/>
+				<SupportVector vectorId="76"/>
+				<SupportVector vectorId="77"/>
+				<SupportVector vectorId="82"/>
+				<SupportVector vectorId="83"/>
+				<SupportVector vectorId="84"/>
+				<SupportVector vectorId="85"/>
+				<SupportVector vectorId="97"/>
+				<SupportVector vectorId="98"/>
+				<SupportVector vectorId="104"/>
+				<SupportVector vectorId="108"/>
+				<SupportVector vectorId="116"/>
+				<SupportVector vectorId="117"/>
+				<SupportVector vectorId="119"/>
+				<SupportVector vectorId="121"/>
+				<SupportVector vectorId="124"/>
+				<SupportVector vectorId="125"/>
+				<SupportVector vectorId="127"/>
+				<SupportVector vectorId="129"/>
+				<SupportVector vectorId="131"/>
+				<SupportVector vectorId="132"/>
+				<SupportVector vectorId="136"/>
+				<SupportVector vectorId="139"/>
+				<SupportVector vectorId="140"/>
+				<SupportVector vectorId="144"/>
+				<SupportVector vectorId="145"/>
+				<SupportVector vectorId="148"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="-0.143704687543137">
+				<Coefficient value="0.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="0.40434216978125864"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="0.27391516456770126"/>
+				<Coefficient value="1.0"/>
+				<Coefficient value="0.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-0.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-0.8300343547007096"/>
+				<Coefficient value="-0.13092148302187717"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-0.6237238841373084"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-0.7730127984352919"/>
+				<Coefficient value="-0.32056481405377285"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-1.0"/>
+				<Coefficient value="-1.0"/>
+			</Coefficients>
+		</SupportVectorMachine>
+	</SupportVectorMachineModel>
+</PMML>
